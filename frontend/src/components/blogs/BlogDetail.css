@@ -1,0 +1,333 @@
+/* BlogDetail.css - Forrester-inspired detail and comments */
+
+.blogdetail-page {
+  background: #f7f8fa;
+  min-height: 100vh;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+
+.blogdetail-main.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem 1rem;
+}
+
+.blogdetail-card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
+  margin-bottom: 2.5rem;
+  border-left: 6px solid #6c63ff;
+  border-right: 4px solid #e0e0e0;
+  border-top: 2px solid #e0e0e0;
+  border-bottom: 2px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.blogdetail-card__header {
+  margin-bottom: 0.5rem;
+}
+
+.blogdetail-card__title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #4834d4;
+  margin: 0;
+}
+
+.blogdetail-card__meta {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.05rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+
+.blogdetail-card__body {
+  font-size: 1.15rem;
+  color: #222;
+  margin-bottom: 0.5rem;
+  line-height: 1.7;
+}
+
+.blogdetail-card__footer {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.05rem;
+  color: #6c63ff;
+  font-weight: 600;
+}
+
+.blogdetail-comments {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  padding: 2rem 2.5rem;
+  margin-bottom: 2rem;
+  border-left: 4px solid #c7b9b99d;
+  border-right: 4px solid #c7b9b99d;
+  border-top: 2px solid #c7b9b99d;
+  border-bottom: 2px solid #c7b9b99d;
+}
+
+.blogdetail-comments h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #2d3a4a;
+  margin-bottom: 1.2rem;
+}
+
+.blogdetail-comment-form textarea {
+  width: 100%;
+  min-height: 70px;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.blogdetail-cta {
+  display: inline-block;
+  background: #6c63ff;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.6rem 1.7rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-size: 1.05rem;
+  border: none;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+
+.blogdetail-cta:hover {
+  background: #4834d4;
+}
+
+.blogdetail-comments-list {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.blogdetail-comment {
+  background: #f7f8fa;
+  border-radius: 0.7rem;
+  padding: 1rem 1.2rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+  border: 2px solid #c7b9b99d;
+  text-align: left;
+}
+
+.blogdetail-comment__meta {
+  font-size: 0.95rem;
+  color: #888;
+  margin-bottom: 0.3rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.blogdetail-comment__body {
+  font-size: 1.08rem;
+  color: #222;
+  text-align: left;
+}
+
+.error-message {
+  background: #ffe0e0;
+  color: #b00020;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Blog creation form styles */
+.blog-detail-container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+  padding: 32px 28px 24px 28px;
+}
+
+.blog-detail-container h2 {
+  margin-bottom: 24px;
+  font-size: 2rem;
+  color: #2d2d2d;
+  text-align: center;
+}
+
+.blog-detail-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.blog-detail-form input[type="text"] {
+  padding: 12px;
+  font-size: 1.1rem;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.blog-detail-form input[type="text"]:focus {
+  border: 1.5px solid #0077ff;
+}
+
+.blog-detail-form textarea {
+  padding: 12px;
+  font-size: 1.1rem;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  outline: none;
+  resize: vertical;
+  min-height: 120px;
+  transition: border 0.2s;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.blog-detail-form textarea:focus {
+  border: 1.5px solid #0077ff;
+}
+
+.blog-detail-form button[type="submit"] {
+  background: #0077ff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.blog-detail-form button[type="submit"]:hover:not(:disabled) {
+  background: #005fcc;
+}
+
+.blog-detail-form button[disabled] {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.blog-detail-error {
+  color: #d32f2f;
+  background: #ffeaea;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 1rem;
+  margin-top: -8px;
+  text-align: center;
+}
+
+.blog-content {
+  white-space: pre-line;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.blog-delete-btn {
+  background: #d32f2f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-left: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.blog-delete-btn:hover {
+  background: #a31515;
+}
+
+.comment-delete-btn {
+  background: #e57373;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 3px 10px;
+  font-size: 0.95rem;
+  margin-left: 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.comment-delete-btn:hover {
+  background: #b71c1c;
+}
+
+/* Modal styles for confirmation popup */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-popup {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.18);
+  padding: 2rem 2.5rem 1.5rem 2.5rem;
+  min-width: 320px;
+  max-width: 90vw;
+  text-align: center;
+}
+
+.modal-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #b00020;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.modal-btn {
+  padding: 0.6rem 1.5rem;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #eee;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.modal-btn:hover {
+  background: #e0e0e0;
+}
+
+.modal-btn-danger {
+  background: #d32f2f;
+  color: #fff;
+}
+
+.modal-btn-danger:hover {
+  background: #a31515;
+}
